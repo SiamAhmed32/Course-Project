@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+    Details About {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+    <!-- <h1>{{ mymember.firstname}} {{ mymember.lastname }}</h1>
+    <p>phone: {{ mymember.phone  }}</p>
+    <p> Back to <a href="/index">Members</a></p> -->
+    <div class="mycard">
+        <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+        <p>Phone {{ mymember.phone }}</p>
+    </div>
+{% endblock %}
